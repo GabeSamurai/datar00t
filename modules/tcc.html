@@ -1,0 +1,409 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>DataR00t</title>
+    <link rel="icon" href="img/thumb.jpg" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+      /* NAV BAR */
+      #title {
+        font-size: 28px;
+        font-weight: normal;
+      }
+
+      #home, #webi, #poet {
+        font-size: 28px;
+        text-decoration: none;
+        color: burlywood;
+      }
+
+      #home {
+        position: absolute; 
+        left: 348px; 
+        top: 19px;
+      }
+
+      #webi {
+        position: absolute; 
+        left: 432px; 
+        top: 19px;
+      }
+
+      #poet {
+        position: absolute; 
+        left: 516px; 
+        top: 19px;
+      }
+
+      #home:hover, #webi:hover, #poet:hover {
+        color: darkblue;
+      }
+      /* ITEM LIST*/
+      .list div {
+        margin-left: 30px;
+        margin-bottom: 9px;
+      }
+      /* ARTICLE FORM */
+      article {
+        width: 47%;
+        padding-left: 1%;
+        padding-right: 1%;
+        
+        border-left: 5px solid;
+        border-right: 5px solid;
+
+        margin-bottom: 15px;
+      }
+
+      body > article {
+        display:inline-block;
+        vertical-align: top;
+      }
+      /* IMAGES SINGLE */
+      .single_small object {
+        width: 70%;
+        position: relative;
+        left: 15%;
+      }
+
+      .single_small p{
+        position: relative;
+        left: 15%;
+      }
+
+      .single_big object {
+        width: 90%;
+        position: relative;
+        left: 5%;
+      }
+
+      .single_big p{
+        position: relative;
+        left: 5%;
+      }
+      /* IMAGES SET */      
+      .set-img object {
+        width: 100%;
+      }
+
+      .set-img section {
+        width: 48%;
+        display: inline-block;
+      }
+      /* REFERENCES */
+      .reference {
+        width: 50%;
+        margin-left: 5%;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <h1 id="title">DataR00t_TCC_Module</h1>
+    <a id="home" href="../index.html">/Home</a>
+    <a id="webi" href="../index.html">/Webi</a>
+    <a id="poet" href="tcc.html">/Poetry</a>
+
+    <article id="meta">
+      <h2>METADATA</h2>
+
+      <h3>1. Tema</h3>
+      <p>Modelagem Conceitual de Dados no Ecossistema UXN Através de Entidades e Relacionamentos.</p>
+
+      <section>
+        <h3>2. Ecossistema UXN</h3>
+        <p>UXN é o nome de um ambiente de programação que envolve muitas ferramentas de
+        software. Ele é usado para a construção de pequenos softwares de utilidades,
+        jogos, músicas, animações, desenhos, entre outros. Os programas são de pequeno
+        porte, feitos por uma só pessoa ou por um pequeno time. Eles são aplicativos Stand-Alone 
+        e não podem estar conectados com a internet.</p>
+
+        <h4>2.1. 100Rabbits</h4>
+
+        <section class="single_small">
+          <object data="../img/100r.jpg"></object>
+          <p>(Devine Lu Linvega à direita e Rek Bell à esquerda)</p>
+        </section>
+
+        <p>É uma parceria entre Devine Lu Linvega e Rek Bell. São duas pessoas vivendo a
+        bordo de um navio veleiro, cruzando o oceano pacífico. Nessas viagens, visitando
+        locais sem acesso à internet e as regalias da sociedade ocidental atual, eles tiveram
+        muitas falhas de software e hardware e, devido a isso, decidiram construir várias
+        ferramentas, remodelando seu ambiente de computação, minimizando o impacto de
+        suas duas principais limitações: baixa capacidade de armazenamento de energia e
+        baixa conectividade com a internet.</p>
+
+        <h4>2.2. UXN - Máquina Virtual</h4>
+        <p>UXN é o nome da máquina virtual do ambiente. É um processador 8bits capaz de ler
+        32 instruções, munido de 64kb e apelidado de Beet (Beterraba). UXN não é uma
+        máquina poderosa e seus desenvolvedores não o projetaram para ser executado o
+        mais rápido possível no hardware existente, eles tiveram como foco a baixa
+        complexidade de implementação do processador por aqueles que desejariam
+        implementá-lo. UXN é um ambiente de pesquisa, onde se busca avaliar formas de se
+        implementar softwares tendo-se pouco acesso a recursos de hardware.</p>
+
+        <p>A máquina virtual permite que programadores precisem somente construir um
+        programa uma única vez, sem a necessidade de alterar o código para cada novo
+        sistema de hardware ou software que seja criado, sendo somente necessário "portar" a
+        máquina virtual, que por si só é bem pequena (cerca de 100 linhas em C89). Uma vez
+        que UXN possa ser executado no novo sistema, todos os outros programas
+        desenvolvidos para ele estarão disponíveis nesse sistema.</p>
+
+        <h4>2.3. Varvara - Computador Pessoal</h4>
+        <p>Devine e Rek consideram um Computador como a totalidade dos dispositivos com
+        que o processador pode se comunicar ou todas as potenciais comunicações de entrada
+        e saída de dados com a máquina virtual, enfim a totalidade dos periféricos conectados
+        com o processador. Em suas palavras: “UXN é para o Varvara, o que o 6502 é para o
+        Nintendo Clássico (Nintendinho aqui no Brasil)”. O emulador está conectado com 16
+        dispositivos, que juntos totalizam 256 bytes, cada dispositivo dividido em 16 Portas.</p>
+
+        <h4>2.4. TAL - Linguagem Assembly</h4>
+        <p>TAL é a linguagem de programação do processador UXN, também chamada de
+        UXNTAL. TAL possui semelhanças com a linguagem FORTH. A primeira é no uso
+        de pilhas de elementos, diminuindo em muito o uso de variáveis. Essas pilhas
+        funcionam de forma que o último elemento a ser colocado na pilha será sempre o
+        primeiro a sair. A segunda é o uso de uma notação matemática chamada Notação
+        Polonesa Inversa, onde os operadores seguem os operandos (5 5 +, em vez de 5 + 5).
+        A terceira é na criação de um dicionário de palavras, onde cada palavra executa um
+        conjunto de instruções definidas pelo programador, sendo que cada palavra pode
+        conter outras palavras.</p>
+
+        <h4>2.5. Funcionamento Básico</h4>
+
+        <section class="single_small">
+          <object data="../img/launcher.png"></object>
+          <p>(Interface)</p>
+        </section>
+
+        <p>Programar no ambiente UXN é bem simples. Após executar a aplicação, aparecerá a
+        interface acima. Na interface existem dois tipos de arquivos: .ROM e .TAL. O
+        primeiro tipo define arquivos binários que podem ser executados pelos computadores
+        e o segundo é o código fonte escrito por eles. A máquina não consegue ler código
+        fonte, por isso é necessário usar um assembler para montar o arquivo .ROM. Um
+        exemplo de uma ROM é o launcher.rom, que é a interface mostrada acima, pela qual
+        é possível executar outras ROMs ou montar arquivos TAL.</p>
+
+        <p>O ecossistema UXN está bem completo e é possível criar programas usando as
+        ferramentas dentro do sistema. Um usuário pode inciar a ROM left (um editor de
+        texto), criar um nome para o novo arquivo, criar um simples programa na linguagem
+        TAL, carregar a ROM launcher com o atalho F4 e então selecionar o novo arquivo
+        TAL, para montá-lo em uma nova ROM.</p>
+
+        <section class="set-img">
+          <section>
+            <object data="../img/passo1.png"></object>
+            <p>(Interface)</p>
+          </section>
+
+          <section>
+            <object data="../img/passo2.png"></object>
+            <p>(ROM left)</p>
+          </section>
+          
+          <section>
+            <object data="../img/passo3.png"></object>
+            <p>(Nova TAL criada)</p>
+          </section>
+
+          <section>
+            <object data="../img/passo4.png"></object>
+            <p>(Nova ROM criada)</p>
+          </section>
+
+          <section>
+            <object data="../img/passo5-1.png"></object>
+            <p>(Execução da nova ROM - Uma linha desenhada)</p>
+          </section>    
+        </section>
+      </section>
+
+      <section>
+        <h3>3. Projeto de Software - SET</h3>
+
+        <section class="single_big">
+          <object data="../img/prototype.png"></object>
+          <p>(Proposta de interface para a aplicação.)</p>
+        </section>
+
+        <p>O projeto proposto nesse TCC é um software de modelagem de sistemas, pela qual o
+        usuário deverá ser capaz de construir diagramas do tipo ER (Entidade-
+        Relacionamento). Procurando na internet, não achei nenhum software construído com
+        essa finalidade dentro do ambiente UXN, pelo menos não com as especificações que
+        serão mencionadas abaixo e possuindo uma interface gráfica.</p>
+
+        <p>SET é o nome do software proposto. Em inglês, significa "Conjunto", pois diagramas
+        ER são uma forma de organizar conjuntos de dados.</p>
+
+        <p>O Ecossistema ainda está em sua infância e esse projeto tem como finalidade trazer
+        os benefícios do modelo entidade-relacionamento para potenciais desenvolvedores,
+        auxiliando na melhoria das capacidades de engenharia na plataforma.</p>
+
+        <h4>3.1 Requisitos Funcionais</h4>
+        <section class="list">
+          <div># O usuário deve ser capaz de [criar/editar/deletar] uma entidade.</div>
+          <div># O usuário deve ser capaz de [criar/editar/deletar] um atributo.</div>
+          <div># O usuário deve ser capaz de [criar/editar/deletar] uma relação entre duas entidades.</div>
+          <div># O usuário deve ser capaz de [abrir/salvar/editar] um projeto de modelação.</div>
+        </section>
+        
+        <h4>3.2 Requisitos Não-Funcionais</h4>
+        <h5>a) Entidade</h5>
+        <section class="list">
+          <div># O sistema deve criar a entidade com o nome padrão: “Entidade”</div>
+          <div># Para criar uma entidade, o botão esquerdo do mouse deve ser selecionado uma vez para a criação 
+          uma entidade.</div>
+          <div># Para editar o nome de uma entidade, o botão esquerdo do mouse deve ser selecionado uma vez com
+          o cursor sobre o nome.</div>
+          <div># Para mover uma entidade, o botão direito do mouse deve estar pressionado com o cursor sobre 
+          a entidade.</div>
+          <div># Se duas ou mais entidades estiverem compartilhando coordenadas, a última criada terá prioridade 
+          de renderização.</div>
+          <div># Para excluir uma entidade, o botão direito do mouse deve ser selecionado duas vezes, com o cursor
+          sobre a entidade a ser excluída.</div>
+          <div># Antes da exclusão da entidade, deve haver uma segunda confirmação de exclusão.</div>
+          <div># Se uma entidade for excluída, todos os relacionamentos dessa entidade devem ser excluídos.</div>
+        </section>
+
+        <h5>b) Atributo</h5>
+        <section class="list">
+          <div># O sistema deve criar um atributo com o nome: “Atributo”.</div>
+          <div># Para criar um atributo, o botão esquerdo do mouse deve ser selecionado duas vezes com o cursor
+          sobre a entidade.</div>
+          <div># Para editar o nome de um atributo, o botão esquerdo do mouse deve ser selecionado duas vezes com
+          o cursor sobre o atributo.</div>
+        </section>
+
+        <h5>c) Relacionamento</h5>
+        <section class="list">
+          <div># Somente deve haver uma relação entre duas entidades.</div>
+          <div># Para a criação de uma relação, uma entidade deve ser selecionada duas vezes com o botão esquerdo 
+          do mouse, depois uma outra entidade deve ser selecionada duas vezes com o mesmo botão esquerdo.</div>
+          <div># Para excluir o relacionamento, deve-se selecioná-lo com o botão direito do mouse.</div>
+          <div># Para editar a cardinalidade do relacionamento, deve-se selecioná-la uma vez com o botão esquerdo 
+          do mouse.</div>
+        </section>
+      </section>
+    </article>
+
+    <article id="tcc">
+      <h2>TCC [INCOMPLETE]</h2>
+      
+      <h3>SET: Uma Solução Para A Ausência de Ferramentas de Modelagem Digital de Software Em Sistemas UXN</h3>
+      <p>Autor: José Gabriel Sampaio de Freitas</p>
+      <p>Orientador: Prof. Carlos Gutierrez</p>
+
+      <h3>Resumo</h3>
+      <p>Há muito tempo deixou de ser predominante o uso de papel e caneta na etapa de modelagem de software.
+      Hoje, essa modelagem é digital, através de inúmeras ferramentas desenvolvidas para esse fim. Apesar da
+      variedade, todas elas oferecem a vantagem de eliminar o espaço físico tomado por papéis e permitir uma rápida
+      modificação de diagramas e compartilhamento dos mesmos, através de redes ou de dispositivos de armazenamento
+      local. Existe uma falta de aplicativos dessa natureza que sejam acessiveis através do sistema de computação
+      UXN, o que obriga o uso de aplicativos fora do ambiente ou a utilização de meios físicos, como o papel,
+      reduzindo o uso do sistema UXN ou eliminando as vantagens do uso de mídias digitas, respectivamente. O presente
+      artigo descreve a construção da ferramenta SET que é executada de dentro do sistema, visando preencher
+      a lacuna existente.</p>
+
+      <h3>1. Introdução</h3>
+      <p>SET foi criado pensando-se na necessidade dos usuários UXN poderem registrar os dados e a forma em que eles
+      estão estruturados e relacionados, auxiliando o programador na tarefa de pesquisa e memorização dos dados
+      necessários para o cumprimento de requisitos, prevenindo a construção de um software incapaz de executar
+      a funcionalidade desejada ou o aumento do tempo de programação, visto que a modificação da estrutura de dados
+      pode envolver uma modificação de grande porte das funções criadas para ele. A definição e registro dos dados e
+      suas relações é denominado de Modelagem de Dados.</p>
+
+      <p class="reference">"Data modeling is the process of creating a visual representation of either a whole
+      information system or parts of it to communicate connections between data points and structures. The goal is
+      to illustrate the types of data used and stored within the system, the relationships among these data types,
+      the ways the data can be grouped and organized and its formats and attributes." [IBM,1]</p>
+
+      <p>O software foi criado com base na simplicidade de funcionalidade e design, não somente devido aos limites
+      da máquina virtual, mas também devido ao desejo de observar - na medida do conveniente para o desenvolvedor
+      e usuários - normas de pragmatismo e facilidade de uso, reduzindo as capacidades do sistema somente ao minímo
+      necessário. Onde necessário, tal estilo de desenvolvimento foi abandonado em favor de uma visão artistica ou
+      lúdica do sistema, a qual possui um peso de importancia semelhante aos demais fatores.</p>
+
+      <p>Atualmente, no sistema UXN, não há uma solução para a modelagem através de linguagens de modelagem, o
+      que obriga o programador a procurar outras soluções. Porém elas não compartilham das vantagens
+      que um programa nativo do ambiente UXN teria. Cada ambiente de sistemas de software oferecem vantagens e
+      desvantagens moldadas pelas necessidades ou problemas para os quais eles foram criados para suprir ou  
+      resolverem, respectivamente. Programas tendem a serem desenvolvidos levando-se em conta as caracteristicas
+      do sistema nativo e para isso SET foi desenvolvido, sendo assim, o presente artigo foi escrito visando
+      apresentá-lo, justificando a necessidade de se preencher esse vácuo.</p>
+
+      <h3>2. Justificativa</h3>
+      <p>As necessidades e problemas existentes que moldaram a criação do ambiente UXN o tornam distinto das
+      alternativas existentes. Antes de qualquer coisa, o ambiente UXN é composto de várias ferramentas, porém
+      o centro delas é a máquina virtual denominada UXN, um emulador de um processador 8Bits. O uso de
+      uma máquina virtual retira a necessidade do código fonte de uma aplicação ser reescrito toda vez que se
+      desejar executa-lo em outros sitemas de software ou hardware. A emulação ajuda a previnir um problema 
+      chamado "Bitrot".</p>
+
+      <p class="reference">"Bitrot is the inability to access digital data because hardware and software no longer
+      exist to read its format." [LINVEGA,2]</p>
+
+      <p>As ferramentas atuais de modelagem não são escritas para emuladores, elas são dependentes
+      de sistemas de hardware e softwares que por sua vez entram em defasagem constante, criando o risco de se
+      perder o acesso aos diagrammas criados por elas. Com o SET, o acesso a dados possui uma camada a mais de
+      proteção.</p>
+
+      <p>UXN foi criado pensando-se na permacomputação, uma filosofia que busca tornar aplicações
+      resilientes ao tempo. Um de seus pontos principais é procurar evitar o máximo possivel o uso de "energia
+      artificial", que seria energia produzida em excesso, para realizar uma tarefa que poderia ser executada com
+      menos. Permacomputação, de acordo com Viznut Heikkilä[3], busca a "permanência cultural e ecológica" da área 
+      computacional.<p>
+
+      <p class="reference">"That is, how to give computers a meaningful and sustainable place in a human civilization
+      that has a meaningful and sustainable place in the planetary biosphere." [HEIKKILÄ,3]</p>
+
+      <p>As limitações de memória - UXN possui 64kb RAM - foram pensadas nesse contexto, onde o programador busca
+      por soluções com recursos limitados a disposição, buscando a maior eficiência energética. SET, por ser escrito
+      para um sistema de memória limitada, prioriza a redução do uso de recursos ao máximo possível. Devido a
+      grande ambundancia de capacidade computacional e energética as soluções alternativas de modelagem foram
+      desenvolvidas com a mentalidade de que as inovações técnologicas sempre ofereceram os recursos necessários de
+      que elas precisam.</p>
+
+      <h3>3. Objetivos</h3>
+      <p>Programar no ambiente UXN é bem simples. Após executar a aplicação, aparecerá a
+      interface acima. Na interface existem dois tipos de arquivos: .ROM e .TAL. O
+      primeiro tipo define arquivos binários que podem ser executados pelos computadores
+      e o segundo é o código fonte escrito por eles. A máquina não consegue ler código
+      fonte, por isso é necessário usar um assembler para montar o arquivo .ROM. Um
+      exemplo de uma ROM é o launcher.rom, que é a interface mostrada acima, pela qual
+      é possível executar outras ROMs ou montar arquivos TAL.</p>
+
+      <h3>4. Metodologia</h3>
+      <p>Programar no ambiente UXN é bem simples. Após executar a aplicação, aparecerá a
+      interface acima. Na interface existem dois tipos de arquivos: .ROM e .TAL. O
+      primeiro tipo define arquivos binários que podem ser executados pelos computadores
+      e o segundo é o código fonte escrito por eles. A máquina não consegue ler código
+      fonte, por isso é necessário usar um assembler para montar o arquivo .ROM. Um
+      exemplo de uma ROM é o launcher.rom, que é a interface mostrada acima, pela qual
+      é possível executar outras ROMs ou montar arquivos TAL.</p>
+
+      <h3>5. Desenvolvimento</h3>
+      <p>Programar no ambiente UXN é bem simples. Após executar a aplicação, aparecerá a
+      interface acima. Na interface existem dois tipos de arquivos: .ROM e .TAL. O
+      primeiro tipo define arquivos binários que podem ser executados pelos computadores
+      e o segundo é o código fonte escrito por eles. A máquina não consegue ler código
+      fonte, por isso é necessário usar um assembler para montar o arquivo .ROM. Um
+      exemplo de uma ROM é o launcher.rom, que é a interface mostrada acima, pela qual
+      é possível executar outras ROMs ou montar arquivos TAL.</p>
+
+      <h3>6. Conclusão</h3>
+      <p>Programar no ambiente UXN é bem simples. Após executar a aplicação, aparecerá a
+      interface acima. Na interface existem dois tipos de arquivos: .ROM e .TAL. O
+      primeiro tipo define arquivos binários que podem ser executados pelos computadores
+      e o segundo é o código fonte escrito por eles. A máquina não consegue ler código
+      fonte, por isso é necessário usar um assembler para montar o arquivo .ROM. Um
+      exemplo de uma ROM é o launcher.rom, que é a interface mostrada acima, pela qual
+      é possível executar outras ROMs ou montar arquivos TAL.</p>
+
+      <h3>7. Bibliografia</h3>
+      <p>[1] IBM, "What is data modeling?", Fonte: https://www.ibm.com/topics/data-modeling.</p>
+      <p>[2] LINVEGA Devine Lu, "A virtual machine", Fonte: https://wiki.xxiivv.com/site/uxn_devlog.html.</p>
+      <p>[3] HEIKKILÄ Viznut, "Permacomputing", Fonte: http://viznut.fi/texts-en/permacomputing.html.</p>
+    </article>
+  </body>
+</html>
