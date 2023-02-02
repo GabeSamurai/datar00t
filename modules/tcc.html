@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>DataR00t</title>
-    <link rel="icon" href="img/thumb.jpg" />
+    <link rel="icon" href="../img/thumb.jpg" />
     <link rel="stylesheet" href="../css/style.css" />
 
     <style>
@@ -38,7 +38,7 @@
       }
 
       #home:hover, #webi:hover, #poet:hover {
-        color: darkblue;
+        color: white;
       }
       /* ITEM LIST*/
       .list div {
@@ -58,7 +58,7 @@
       }
 
       body > article {
-        display:inline-block;
+        display: inline-block;
         vertical-align: top;
       }
       /* IMAGES SINGLE */
@@ -97,10 +97,24 @@
         width: 50%;
         margin-left: 5%;
       }
+
+      .hidden {
+        display: none;
+      } 
+
+      .reference span {
+        color: white;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .reference span:hover{
+        color: burlywood;
+      }
     </style>
   </head>
   
-  <body>
+  <body id="module">
     <h1 id="title">DataR00t_TCC_Module</h1>
     <a id="home" href="../index.html">/Home</a>
     <a id="webi" href="../index.html">/Webi</a>
@@ -295,14 +309,13 @@
       <p>Orientador: Prof. Carlos Gutierrez</p>
 
       <h3>Resumo</h3>
-      <p>Há muito tempo deixou de ser predominante o uso de papel e caneta na etapa de modelagem de software.
-      Hoje, essa modelagem é digital, através de inúmeras ferramentas desenvolvidas para esse fim. Apesar da
-      variedade, todas elas oferecem a vantagem de eliminar o espaço físico tomado por papéis e permitir uma rápida
-      modificação de diagramas e compartilhamento dos mesmos, através de redes ou de dispositivos de armazenamento
-      local. Existe uma falta de aplicativos dessa natureza que sejam acessiveis através do sistema de computação
-      UXN, o que obriga o uso de aplicativos fora do ambiente ou a utilização de meios físicos, como o papel,
-      reduzindo o uso do sistema UXN ou eliminando as vantagens do uso de mídias digitas, respectivamente. O presente
-      artigo descreve a construção da ferramenta SET que é executada de dentro do sistema, visando preencher
+      <p>A etapa de modelagem de dados é realizada através de inúmeras ferramentas desenvolvidas para esse fim.
+      Apesar da variedade, todas elas oferecem a vantagem de eliminar o espaço físico tomado por papéis e permitir
+      uma rápida modificação de diagramas e compartilhamento dos mesmos, através de redes ou de dispositivos de
+      armazenamento local. Existe uma falta de aplicativos dessa natureza que sejam acessiveis através do sistema de
+      computação UXN, o que obriga o uso de aplicativos fora do ambiente ou a utilização de meios físicos, como o
+      papel, reduzindo o uso do sistema UXN ou eliminando as vantagens do uso de mídias digitas, respectivamente. O
+      presente artigo descreve a construção da ferramenta SET que é executada de dentro do sistema, visando preencher
       a lacuna existente.</p>
 
       <h3>1. Introdução</h3>
@@ -313,10 +326,17 @@
       pode envolver uma modificação de grande porte das funções criadas para ele. A definição e registro dos dados e
       suas relações é denominado de Modelagem de Dados.</p>
 
-      <p class="reference">"Data modeling is the process of creating a visual representation of either a whole
-      information system or parts of it to communicate connections between data points and structures. The goal is
-      to illustrate the types of data used and stored within the system, the relationships among these data types,
-      the ways the data can be grouped and organized and its formats and attributes." [IBM,1]</p>
+      <p id="ref1" class="reference">"Data modeling is the process of creating a visual representation of either a
+      whole information system or parts of it to communicate connections between data points and structures. The goal
+      is to illustrate the types of data used and stored within the system, the relationships among these data types,
+      the ways the data can be grouped and organized and its formats and attributes." [IBM,1] 
+      <span onclick="hide1('ref1', 'ref2')">PT-BR</span></p>
+
+      <p id="ref2" class="reference hidden">"A modelagem de dados é o processo de criação de uma representação visual
+      de um sistema de informação inteiro ou de partes dele para comunicar conexões entre pontos de dados e
+      estruturas. O objetivo é ilustrar os tipos de dados usados ​​e armazenados no sistema, as relações entre esses
+      tipos de dados, as formas como os dados podem ser agrupados e organizados e seus formatos e 
+      atributos." [IBM,1] <span onclick="hide2('ref1', 'ref2')">EN-USA</span></p>
 
       <p>O software foi criado com base na simplicidade de funcionalidade e design, não somente devido aos limites
       da máquina virtual, mas também devido ao desejo de observar - na medida do conveniente para o desenvolvedor
@@ -340,8 +360,12 @@
       desejar executa-lo em outros sitemas de software ou hardware. A emulação ajuda a previnir um problema 
       chamado "Bitrot".</p>
 
-      <p class="reference">"Bitrot is the inability to access digital data because hardware and software no longer
-      exist to read its format." [LINVEGA,2]</p>
+      <p id="ref3" class="reference">"Bitrot is the inability to access digital data because hardware and software
+      no longer exist to read its format." [LINVEGA,2]<span onclick="hide1('ref3', 'ref4')">PT-BR</span></p>
+
+      <p id="ref4" class="reference hidden">"Bitrot é a incapacidade de acessar dados digitais porque não existem
+      mais hardware e software para ler seu formato." [LINVEGA,2]<span onclick="hide2('ref3', 'ref4')">EN-USA</span>
+      </p>
 
       <p>As ferramentas atuais de modelagem não são escritas para emuladores, elas são dependentes
       de sistemas de hardware e softwares que por sua vez entram em defasagem constante, criando o risco de se
@@ -354,8 +378,13 @@
       menos. Permacomputação, de acordo com Viznut Heikkilä[3], busca a "permanência cultural e ecológica" da área 
       computacional.<p>
 
-      <p class="reference">"That is, how to give computers a meaningful and sustainable place in a human civilization
-      that has a meaningful and sustainable place in the planetary biosphere." [HEIKKILÄ,3]</p>
+      <p id="ref5" class="reference">"That is, how to give computers a meaningful and sustainable place in a human
+      civilization that has a meaningful and sustainable place in the planetary biosphere." [HEIKKILÄ,3]
+      <span onclick="hide1('ref5', 'ref6')">PT-BR</span></p>
+
+      <p id="ref6" class="reference hidden">"Ou seja, como dar aos computadores um lugar significativo e sustentável
+      em uma civilização humana que tem um lugar significativo e sustentável na biosfera planetária." [HEIKKILÄ,3]
+      <span onclick="hide2('ref5', 'ref6')">EN-USA</span></p>
 
       <p>As limitações de memória - UXN possui 64kb RAM - foram pensadas nesse contexto, onde o programador busca
       por soluções com recursos limitados a disposição, buscando a maior eficiência energética. SET, por ser escrito
@@ -405,5 +434,17 @@
       <p>[2] LINVEGA Devine Lu, "A virtual machine", Fonte: https://wiki.xxiivv.com/site/uxn_devlog.html.</p>
       <p>[3] HEIKKILÄ Viznut, "Permacomputing", Fonte: http://viznut.fi/texts-en/permacomputing.html.</p>
     </article>
+
+    <script>
+      function hide1(id1, id2) {
+          document.getElementById(id2).style.display = "block";
+          document.getElementById(id1).style.display = "none";  
+      }
+
+      function hide2(id1, id2) {
+          document.getElementById(id2).style.display = "none";
+          document.getElementById(id1).style.display = "block";  
+      }
+    </script>
   </body>
 </html>
